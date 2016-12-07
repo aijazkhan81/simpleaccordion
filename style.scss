@@ -1,3 +1,23 @@
+$border: 1px solid black;
+
+
 body{
 	margin: 0;
+	padding: 20px;
+
+	div{
+		padding: 5px
+	}
+
+	.heading{
+		border: $border;
+		margin-top: 5px;
+		cursor: pointer;
+	}
+
+	.content{
+		border: $border;
+		border-top: 0;
+		cursor: default;
+	}
 }
