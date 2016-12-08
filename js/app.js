@@ -1,25 +1,24 @@
-$('.content').hide();
-$( ".heading" ).append( '<span class="arrow"></span>' );
+$(".content").hide();
+$(".heading").append('<span class="arrow"></span>');
 
 
 $('.heading').click(function(){
-	var at = $(this).attr('data-heading');
-	var con = $("[data-content='" + at + "']");
+	var heading = $(this).attr('data-heading');
+	var con = $("[data-content='" + heading + "']");
 	con.slideToggle(200);
 	if(con.attr('newTile')){
 		con.removeAttr('newTile');
-		var degree = 0;
 		$(this).find( ".arrow" ).css({
-			'-webkit-transform': 'rotate(' + degree + 'deg)',
-			'-moz-transform': 'rotate(' + degree + 'deg)',
-			'-ms-transform': 'rotate(' + degree + 'deg)',
-			'-o-transform': 'rotate(' + degree + 'deg)',
-			'transform': 'rotate(' + degree + 'deg)',
+			'-webkit-transform': '',
+			'-moz-transform': '',
+			'-ms-transform': '',
+			'-o-transform': '',
+			'transform': '',
 			'zoom': 1
 		});
 	}
 	else{
-		con.attr('newTile', at);
+		con.attr('newTile', heading);
 		var degree = -90;
 		$(this).find( ".arrow" ).css({
 			'-webkit-transform': 'rotate(' + degree + 'deg)',
