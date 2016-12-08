@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: #ecf0f1;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif; }
+  body div {
+    padding: 10px; }
+  body h1 {
+    text-align: center;
+    color: black; }
+  body .heading {
+    border: 1px solid black;
+    margin-top: 5px;
+    cursor: pointer;
+    background: #2c3e50;
+    border-color: #2c3e50 !important;
+    font-weight: 600; }
+    body .heading .arrow {
+      width: 0;
+      height: 0;
+      padding: 0;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-right: 8px solid #ecf0f1;
+      margin-top: 4px;
+      margin-right: 4px;
+      float: right;
+      transition: .2s linear; }
+  body .content {
+    border: 1px solid black;
+    border-top: 0;
+    cursor: default;
+    font-weight: 400;
+    background: #435d78;
+    letter-spacing: 1px; }
+
+/*# sourceMappingURL=style.css.map */
